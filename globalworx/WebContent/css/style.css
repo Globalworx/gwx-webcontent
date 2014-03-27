@@ -218,7 +218,8 @@
 	text-decoration: none;
 }
 .menu ul > li > a {
-	color: #2d3e52;
+/* 	color: #2d3e52; */
+	color: #0E50B1;
 	font-weight: normal;
 	font-size: 13px;
 	line-height: 18px;
@@ -1645,10 +1646,11 @@ html[xmlns] .slides {
 /* Bg Tagline*/
 .bg-tagline {
 	width: 100% !important;
+	heigth: 15px !important;
 	position: relative;
 	padding: 20px 0px 10px;
-	background:#232d37;
-	border-bottom:6px solid #dce6f0;
+	background:#27629C;
+	border-top:2px solid #91AECC;
 }
 .bg-tagline h3 {
 	color:#fff;
@@ -2700,7 +2702,10 @@ background-size: cover;
 	background-image: url(../images/parallex/parallex5.jpg);
 }
 #parallex-inner {
-	background-image: url(../images/parallex/parallex-inner.jpg);
+/* 	background-image: url(../images/parallex/parallex-inner.jpg); */
+	width: 100%;
+	height:107px;
+	background:#27629C;
 	margin-bottom:60px;
 }
 #parallex-inner .container {
@@ -5350,12 +5355,15 @@ color:#afb4b9
 /* Footer Bottom
 ====================================*/
 #footer-bottom {
-	background-color: #fff;
+/* 	background-color: #fff; */
+	background-color:#27629C;
 	padding: 20px 0 17px 0;
-	color: #232d37;
+/* 	color: #232d37; */
+	color: #DBDBDB;
+	border-top:2px solid #91AECC;
 }
 #footer-bottom a {
-	color: #232d37;
+	color: #DBDBDB;
 	font-weight: 600;
 }
 /* Get In Touch

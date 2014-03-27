@@ -661,7 +661,7 @@ content:'';
 	content:'🍞'
 }
 .ss-mug:before, .ss-mug.right:after {
-	content:'☕'
+	content:'☕' 
 }
 .ss-mugs:before, .ss-mugs.right:after {
 	content:''
