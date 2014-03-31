@@ -1,0 +1,18 @@
+#contact {
+	border-top:3px solid;
+}
+#contact:after {
+ transition-delay: .2s;
+-webkit-transition-delay: .2s;
+-moz-transition-delay: .2s;
+-ms-transition-delay: .2s;
+-o-transition-delay: .2s;
+	width:0px;
+	-webkit-transition-duration: 0.3s;
+	-moz-transition-duration: 0.3s;
+	-ms-transition-duration: 0.3s;
+	-o-transition-duration: 0.3s;
+}
+.ie8 #contact:after {
+	display: none;
+}

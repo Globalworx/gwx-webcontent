@@ -22,6 +22,7 @@
 <link rel="stylesheet" type="text/css" href="css/animate.css">
 <link rel="stylesheet" type="text/css" href="css/camera.css" id='camera-css'>
 <link rel="stylesheet" type="text/css" href="css/switcher.css" >
+<link rel="stylesheet" type="text/css" href="css/globalworx/nav-home.css" >
 
 <script src="scripts/jquery.min.js"></script>
 <script src="scripts/jquery.themepunch.plugins.min.js"></script>
@@ -54,6 +55,7 @@
 
 $(document).ready(function() {
 	$('#topbarContainer').load('topbar-header.html');
+	$('#nav-content').load('navigation-menu.html');
 	$('#footer-bottom').load('footer-bottom.html');
 });
 
@@ -71,55 +73,39 @@ $(document).ready(function() {
     <!-- Mobile Menu & Search -->
     <div class="container">
     
-    <div id='threeColumns' class="three columns">
-    <div id="mobile-navigation">
-			<form method="GET" id="menu-search" action="#">
-				<input type="text" value="Start Typing..."
-					onFocus="if (this.value == 'Start Typing...')this.value = '';"
-					onBlur="if (this.value == '')this.value = 'Start Typing...';" />
-			</form>
-			<a href="#menu" class="menu-trigger"><i class="icon-reorder"></i></a>
-			<span class="search-trigger"><i class="icon-search"></i></span>
-		</div>
+   <div id='threeColumns' class="three columns">
 		<div id="logo" style="margin-top: 22px;">
 			<h1>
-				<a href="index.html"><img src="images/globalworxLogo.png"
-					alt="Globalworx" /></a>
+				<a href="index.html"><img src="images/globalworx/globalworx-logo.png" alt="Globalworx" /></a>
 			</h1>
 		</div>
     </div>
+    
    
     <!-- Navigation
-		================================================== -->
-        <div id='thirteenColumns'  class="thirteen columns">
-			<nav id="navigation" class="menu">
-			<ul id="responsive">
-				<li><a href="index.html" id="current">Home</a></li>
-				<li><a href="about-globalworx.html" >About Us</a>                            
-					<ul>
-	                 	<li><a href="about-globalworx.html">About Globalworx</a></li>
-	                 	<li><a href="about-people.html">Our People</a></li>
-					</ul> 
-				</li>
-				<li><a href="service-cloudworkspace.html">Services</a>
-					<ul>
-	                 	<li><a href="service-cloudworkspace.html">CloudWorkspace</a></li>
-	                 	<li><a href="service-cloudbridge.html">CloudBrigde</a></li>
-	                 	<li><a href="service-iaas.html">Infrastructure As A Service</a></li>
-					</ul> 
-				</li>
-				<li><a href="partners.html" >Partners</a></li>
-				<li><a href="contact.html" >Contact Us</a></li>
-			</ul>
-			</nav>
-	    </div>
-		<!-- 	NAV END=================================================== -->
-    
-    
+	================================================== -->
+    <div id='nav-content'>
+	    <div id='thirteenColumns'  class="thirteen columns">
+	    	<nav id="navigation" class="menu">
+		    	<ul id="responsive">
+		    		<li><a href="index.html" id="home">Home</a></li>
+		    	</ul>
+	    	</nav>
+		</div>
+	</div>
+	<!-- 	NAV END=================================================== -->
+  
     
     </div><!-- Container / End -->
 </header>
-<!-- Header / End -->
+
+
+<!-- Header / End ===================================================-->
+
+
+
+
+
 
 <!-- Content Wrapper
 ================================================== -->
@@ -165,8 +151,7 @@ $(document).ready(function() {
 						data-start="1600"
 						data-easing="Power3.easeInOut"
 						data-endspeed="300"
-						style="z-index: 3">We're not the only ones excited about Evolve Template...<br>
-                              Competently disintermediate top-line leadership with virtual initiatives. </div>
+						style="z-index: 3">CloudWorkspace™ is a managed Hosted Virtual Desktop solution<br></div>
                         
                          <div class="caption text skewfromrightshort customout"
 						data-x="0"
@@ -425,31 +410,34 @@ $(document).ready(function() {
          <h3 class="headline">What we offer</h3>
          <span class="brd-headling"></span>
          <div class="clearfix"></div>
-         <div class="one-third column">
+         
+          <div class="one-third column">
               <div class="featured-box">
-                   <div class="square-1"><i class="ss-layers"></i></div>
-                   <div class="featured-desc">
-                        <h3>Square Style</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-                        <a href="#" class="button line-color">Read More</a> </div>
-              </div>
-         </div>
-         <div class="one-third column">
-              <div class="featured-box">
-                   <div class="circle-1"><i class="ss-layers"></i></div>
-                   <div class="featured-desc">
-                        <h3>Circle Style</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-                        <a href="#" class="button line-color">Read More</a> </div>
-              </div>
-         </div>
-         <div class="one-third column">
-              <div class="featured-box">
-                   <div class="icons-center"><i class="ss-layers"></i></div>
+                   <img src="images/globalworx/cw/cw-main.png" alt="cloud workspace" style="width: 150px; height: 120px; margin-left:auto; margin-right:auto;margin-button:12px ">
                    <div class="featured-desc-center">
-                        <h3>Simple Icon Style</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-                        <a href="#" class="button line-color">Read More</a> </div>
+                        <h3>Cloud Workspsace</h3>
+                        <p>CloudWorkspace™ is a managed Hosted Virtual Desktop solution. The solution is hosted in a Globalworx data center...</p>
+                        <a href="service-cloudworkspace.html" class="button line-color">Read More</a> </div>
+              </div>
+         </div>
+          <div class="one-third column">
+              <div class="featured-box">
+                   <img src="images/globalworx/cloudbridge/cloud-bridge-main.jpg" alt="cloud workspace" style="width: 150px; height: 120px; margin-left:auto; margin-right:auto;margin-button:12px ">
+                   <div class="featured-desc-center">
+                         <h3>Cloud Bridge</h3>
+                        <p>Globalworx’s “CloudBridge” consulting practice can help you transition your applications to the cloud quickly...</p>
+                        <a href="service-cloudbridge.html" class="button line-color">Read More</a> </div>
+              </div>
+         </div>
+         
+         <div class="one-third column">
+              <div class="featured-box">
+                   <img src="images/globalworx/iaas/iaas-page.jpg" alt="cloud workspace" style="width: 150px; height: 120px; margin-left:auto; margin-right:auto; margin-button:12px">
+                   <div class="featured-desc-center">
+                        <h3>IAAS</h3>
+                        <p>Infrastructure As A Service. 
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore...</p>
+                        <a href="service-iaas.html" class="button line-color">Read More</a> </div>
               </div>
          </div>
     </div>

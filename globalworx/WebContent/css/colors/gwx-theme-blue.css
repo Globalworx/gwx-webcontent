@@ -22,11 +22,47 @@ a, a:visited,
 #not-found i,
 .portfolio-item:hover > figure > .item-description a h5,
 #header .topbar .call li i,
+
 #current,
 .menu ul li a:hover,
 .menu ul > li:hover > a
 .comment-by span.reply a:hover,
 .comment-by span.reply a:hover i,
+
+#home,
+.menu ul li a:hover,
+.menu ul > li:hover > a
+.comment-by span.reply a:hover,
+.comment-by span.reply a:hover i,
+
+#about,
+.menu ul li a:hover,
+.menu ul > li:hover > a
+.comment-by span.reply a:hover,
+.comment-by span.reply a:hover i,
+
+#services,
+.menu ul li a:hover,
+.menu ul > li:hover > a
+.comment-by span.reply a:hover,
+.comment-by span.reply a:hover i,
+
+#partners,
+.menu ul li a:hover,
+.menu ul > li:hover > a
+.comment-by span.reply a:hover,
+.comment-by span.reply a:hover i,
+
+#contact,
+.menu ul li a:hover,
+.menu ul > li:hover > a
+.comment-by span.reply a:hover,
+.comment-by span.reply a:hover i,
+
+
+
+
+
 #footer .widget-text h4 a:hover,
 .categories a:hover,
 .testimonials-author,

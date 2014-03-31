@@ -19,6 +19,7 @@
 <link rel="stylesheet" type="text/css" href="css/animate.css">
 <link rel="stylesheet" type="text/css" href="css/camera.css" id='camera-css'>
 <link rel="stylesheet" type="text/css" href="css/switcher.css" >
+<link rel="stylesheet" type="text/css" href="css/globalworx/nav-services.css" >
 
 <script src="scripts/jquery.min.js"></script>
 <script src="scripts/jquery.themepunch.plugins.min.js"></script>
@@ -49,10 +50,10 @@
 <script >
 	$(document).ready(function(){
 		$('#topbarContainer').load('topbar-header.html');
+// 		$('#nav-content').load('navigation-menu.html');
 		$('#footer-bottom').load('footer-bottom.html');
 	});
 </script>
-
 
 
 </head>
@@ -65,46 +66,39 @@
     </div>
      <!-- Mobile Menu & Search -->
      <div class="container">
-         
           <div class="three columns">
-<!--                <div id="mobile-navigation"> -->
-<!--                     <form method="GET" id="menu-search" action="#"> -->
-<!--                          <input type="text" value="Start Typing..." onFocus="if (this.value == 'Start Typing...')this.value = '';" onBlur="if (this.value == '')this.value = 'Start Typing...';"/> -->
-<!--                     </form> -->
-<!--                     <a href="#menu" class="menu-trigger"><i class="icon-reorder"></i></a> <span class="search-trigger"><i class="icon-search"></i></span>  -->
-<!--                </div> -->
               	<div id="logo" style="margin-top: 22px;">
-					<h1><a href="index.html"><img src="images/globalworxLogo.png" alt="Globalworx" /></a></h1>
+					<h1>
+						<a href="index.html"><img src="images/globalworx/globalworx-logo.png" alt="Globalworx" /></a>
+					</h1>
 			  	</div>
           </div>
 
-
-
-		<!-- Navigation
+		 <!-- Navigation
 		================================================== -->
-          <div id='thirteenColumns'  class="thirteen columns">
-			<nav id="navigation" class="menu">
-			<ul id="responsive">
-				<li><a href="index.html" >Home</a></li>
-				<li><a href="about-globalworx.html" >About Us</a>                            
-					<ul>
-	                 	<li><a href="about-globalworx.html">About Globalworx</a></li>
-	                 	<li><a href="about-people.html">Our People</a></li>
-					</ul> 
-				</li>
-				<li><a href="service-cloudworkspace.html" id="current">Services</a>
-					<ul>
-	                 	<li><a href="service-cloudworkspace.html">CloudWorkspace</a></li>
-	                 	<li><a href="service-cloudbridge.html">CloudBrigde</a></li>
-	                 	<li><a href="service-iaas.html">Infrastructure As A Service</a></li>
-					</ul> 
-				</li>
-				<li><a href="partners.html">Partners</a></li>
-				<li><a href="contact.html" >Contact Us</a></li>
-			</ul>
-			</nav>
-	    </div>
-<!-- 	NAV END=================================================== -->
+			<div id='thirteenColumns' class="thirteen columns">
+				<nav id="navigation" class="menu">
+					<ul id="responsive">
+						<li><a href="index.html" id="home">Home</a></li>
+						<li><a href="about-globalworx.html" id="about">About Us</a>
+							<ul>
+								<li><a href="about-globalworx.html">About Globalworx</a></li>
+								<li><a href="about-people.html">Our People</a></li>
+							</ul>
+						</li>
+						<li><a href="service-cloudworkspace.html" id="services">Services</a>
+							<ul>
+								<li><a href="service-cloudworkspace.html">CloudWorkspace</a></li>
+								<li><a href="service-cloudbridge.html">CloudBrigde</a></li>
+								<li><a href="service-iaas.html">Infrastructure As A	Service</a></li>
+							</ul>
+						</li>
+						<li><a href="partners.html" id="partners">Partners</a></li>
+						<li><a href="contact.html" id="contact">Contact Us</a></li>
+					</ul>
+				</nav>
+			</div>
+			<!-- 	NAV END=================================================== -->
      
      </div><!-- Container / End -->
       
