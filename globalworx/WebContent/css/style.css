@@ -317,7 +317,7 @@ transition-delay: .2s;
 	white-space:nowrap;
 }
 .menu ul ul li a {
-	color: #afb4b9;
+	color: #7EA5F0;
 	font-size: 12px;
 	line-height: 18px;
 	padding: 10px 16px !important;
@@ -337,8 +337,8 @@ transition-delay: .2s;
 	border: 0!important;
 }
 .menu ul ul li a:hover {
-	color: #9ba0a5;
-	background-color: #f5f7f9;
+	color: #7EA5F0;
+	background-color: #DBEAF9;
 	border: 0;
 	border-top:0px!important;
 }
