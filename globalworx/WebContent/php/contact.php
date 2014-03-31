@@ -19,7 +19,7 @@ if (!$comments) $errors[count($errors)] = 'Please enter your message.';
 if (!$errors) {
 
 	// ====== Your mail here  ====== //
-	$to = 'mail@example.com';
+	$to = 'jaraujo@globalworx.ca';
 	
     //Email from which you will receive email. must be on same domain to avoid spam
     $from_email = 'contact@example.com';
