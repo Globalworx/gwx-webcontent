@@ -1,4 +1,23 @@
 @CHARSET "UTF-8";
+
+/* index page */
+.featured-box img {
+	width: 160px;
+	height: 120px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-button: 12px;
+}
+
+.featured-desc-center{
+	margin-top:12px;
+}
+
+.featured-desc-center p{
+	margin:0px;
+}
+
+/* service-iaas page */
 .img-wrp{
 	padding-top:25px;
 }
