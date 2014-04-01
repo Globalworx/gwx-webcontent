@@ -3,31 +3,42 @@
 //Retrieve form data. 
 //GET - user submitted data using AJAX
 //POST - in case user does not support javascript, we'll use POST instead
-$name = ($_GET['name']) ? $_GET['name'] : $_POST['name'];
-$email = ($_GET['email']) ?$_GET['email'] : $_POST['email'];
-$comments = ($_GET['comments']) ?$_GET['comments'] : $_POST['comments'];
+//$name = ($_GET['name']) ? $_GET['name'] : $_POST['name'];
+//$email = ($_GET['email']) ?$_GET['email'] : $_POST['email'];
+//$comments = ($_GET['comments']) ?$_GET['comments'] : $_POST['comments'];
+
+$name = $_POST['name'];
+$email = $_POST['email'];
+$company = $_POST['company'];
+$comments = $_POST['comments'];
 
 //flag to indicate which method it uses. If POST set it to 1
 if ($_POST) $post=1;
 
+
+//TODO: validate email
 //Simple server side validation for POST data, of course, you should validate the email
 if (!$name) $errors[count($errors)] = 'Please enter your name.';
-if (!$email) $errors[count($errors)] = 'Please enter your email.'; 
-if (!$comments) $errors[count($errors)] = 'Please enter your message.'; 
+if (!$email) $errors[count($errors)] = 'Please enter your email.';
+if (!$company) $errors[count($errors)] = 'Please enter your Company.';
+if (!$message) $errors[count($errors)] = 'Please enter your message.';
 
 //If the errors array is empty, send the mail
 if (!$errors) {
 
 	// ====== Your mail here  ====== //
-	$to = 'jaraujo@globalworx.ca';
+//	$to = 'info@globalworx.ca';
+	$to = 'jaraujo@globalworx.ca'; //TODO: remove this line before production!
 	
     //Email from which you will receive email. must be on same domain to avoid spam
-    $from_email = 'contact@example.com';
+//    $from_email = 'info@example.com';
+    $from_email = 'jaraujo@example.com';//TODO: remove this line before production!
+    
     
 	// Sender
 	$from = $name . " <" . $from_email . ">";
 	//subject and the html message
-	$subject = 'Message from your website';	
+	$subject = 'Message from Globalworx website';	
 	$message = '
 	<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
 	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -36,7 +47,8 @@ if (!$errors) {
 	<body>
 	<table>
 		<tr><td>Name:</td><td>' . $name . '</td></tr>
-		<tr><td>Email:</td><td>' . $email . '</td></tr>		
+		<tr><td>Email:</td><td>' . $email . '</td></tr>
+		<tr><td>Company:</td><td>' . $company . '</td></tr>
 		<tr><td>Comments:</td><td>' . nl2br($comments) . '</td></tr>
 	</table>
 	</body>
