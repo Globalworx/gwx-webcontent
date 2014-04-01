@@ -18,3 +18,14 @@
 	margin-right:auto;
 	margin-bottom:15px;
 }
+
+.services-box-animated .front{
+	height:82px;
+	border:none;
+}
+
+.services-box-animated .back{
+	height:auto;
+	margin-top:20px;
+	background: none repeat scroll 0% 0% #27629C
+}
