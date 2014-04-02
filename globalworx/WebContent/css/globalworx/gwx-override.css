@@ -48,3 +48,26 @@
 	margin-top:20px;
 	background: none repeat scroll 0% 0% #27629C
 }
+
+/*services-cloud workspace page*/
+.parent-header{
+	margin-top: 18px;
+	margin-bottom: 2px;
+	font-weight:700;
+	font-style: italic;
+}
+
+.child-content{
+	margin-bottom:2px;
+}
+
+.child-list{
+	padding-left: 25px;
+}
+
+.child-list p{
+	margin-bottom:10px;
+	text-align:justify;
+}
+
+
