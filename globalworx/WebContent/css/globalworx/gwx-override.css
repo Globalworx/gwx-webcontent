@@ -1,5 +1,14 @@
 @CHARSET "UTF-8";
 
+/* general page */
+.page-picture img{
+	width: 410px;
+	height: 362px;
+}
+
+
+
+
 /* index page */
 .featured-box img {
 	width: 160px;
