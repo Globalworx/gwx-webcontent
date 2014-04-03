@@ -104,3 +104,48 @@ a.button.color.animated.fadeInRight:hover{
 	background: none repeat scroll 0% 0% #0080FF;
 }
 
+
+
+/*einnovate page*/
+
+.bg-red{
+	background-color:#FA0F0C;
+	height: 116px;
+	width:719px;
+}
+
+table, th, td {
+	border: 1px solid black;
+	border-color: #FFFBF1;
+	text-align:center; 
+    vertical-align:middle;
+}
+
+table{
+}
+
+th{
+	height: 114px;
+	width:158px;
+	background-color:#FA0F0C;
+	color:#FFFBF1;
+}
+
+td {
+	height: 55px;
+	width: 158px;
+	padding-left:20px;
+	margin-left: auto;
+	margin-right: auto;
+/* 	text-align:center;  */
+/*     vertical-align:middle; */
+}
+
+.even{
+	background-color:#D0D8E8;
+}
+.odd{
+	background-color:#E9EDF4;
+}
+
+
