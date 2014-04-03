@@ -110,8 +110,15 @@ a.button.color.animated.fadeInRight:hover{
 
 .bg-red{
 	background-color:#FA0F0C;
-	height: 116px;
-	width:719px;
+	height: 113px;
+	width:718px;
+	margin:auto;
+}
+
+.bg-red img{
+	width:130px;
+	height: inherit;
+	margin:auto;
 }
 
 table, th, td {
@@ -122,6 +129,7 @@ table, th, td {
 }
 
 table{
+	margin:auto;
 }
 
 th{
@@ -148,4 +156,7 @@ td {
 	background-color:#E9EDF4;
 }
 
-
+.featured-desc-2 h3 {
+    font-size: 15px;
+    font-weight: 300;
+    font-family: "Raleway";
