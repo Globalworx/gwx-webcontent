@@ -41,11 +41,49 @@
 
 .iaaspage img{
 	width:357px; 
-	height:285px; 
+	height:305px; 
 	margin-left:auto;
 	margin-right:auto;
 	margin-bottom:15px;
 }
+
+
+
+.iaaspage .convenience-of-access{
+	margin-top:25px;
+	height:280px;
+}
+
+.iaaspage .pay-as-you-go{
+	width:450px;
+}
+
+.iaaspage .scalable-service{
+	width:345px;
+	margin-left:20px;
+}
+
+
+
+.flip-h{
+	 -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+}
+
+.flip-v{
+	-moz-transform: scaleY(-1);
+    -o-transform: scaleY(-1);
+    -webkit-transform: scaleY(-1);
+    transform: scaleY(-1);
+    filter: FlipV;
+    -ms-filter: "FlipV";
+}
+
+
 
 .services-box-animated .front{
 	height:82px;
@@ -84,6 +122,11 @@
 .team {
 	height: 812px;
 }
+
+.happy-clients-cite{
+	color:#0D86FF;
+}
+
 
 /* partner */
 
