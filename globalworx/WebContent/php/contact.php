@@ -3,9 +3,13 @@
 //Retrieve form data. 
 //GET - user submitted data using AJAX
 //POST - in case user does not support javascript, we'll use POST instead
-$name = ($_GET['name']) ? $_GET['name'] : $_POST['name'];
-$email = ($_GET['email']) ?$_GET['email'] : $_POST['email'];
-$comments = ($_GET['comments']) ?$_GET['comments'] : $_POST['comments'];
+$name = $_POST['name'];
+$email = $_POST['email'];
+$company = $_POST['company'];
+$message = $_POST['message'];
+$errors='';
+
+
 
 //flag to indicate which method it uses. If POST set it to 1
 if ($_POST) $post=1;
@@ -22,18 +26,18 @@ if (!$message) $errors[count($errors)] = 'Please enter your message.';
 if (!$errors) {
 
 	// ====== Your mail here  ====== //
-//	$to = 'info@globalworx.ca';
-	$to = 'jaraujo@globalworx.ca'; //TODO: remove this line before production!
+	$to = 'info@globalworx.net';
 	
     //Email from which you will receive email. must be on same domain to avoid spam
-//    $from_email = 'info@example.com';
-    $from_email = 'jaraujo@example.com';//TODO: remove this line before production!
+    $from_email = 'info@globalworx.net';
     
     
 	// Sender
 	$from = $name . " <" . $from_email . ">";
+	
 	//subject and the html message
 	$subject = 'Message from Globalworx website';	
+	
 	$message = '
 	<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
 	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -44,7 +48,7 @@ if (!$errors) {
 		<tr><td>Name:</td><td>' . $name . '</td></tr>
 		<tr><td>Email:</td><td>' . $email . '</td></tr>
 		<tr><td>Company:</td><td>' . $company . '</td></tr>
-		<tr><td>Comments:</td><td>' . nl2br($comments) . '</td></tr>
+		<tr><td>Message:</td><td>' . nl2br($message) . '</td></tr>
 	</table>
 	</body>
 	</html>';
@@ -69,12 +73,12 @@ if (!$errors) {
 
 
 // Simple mail function with HTML header
-function sendmail($to, $subject, $comments, $from) {
+function sendmail($to, $subject, $message, $from) {
 	$headers  = 'MIME-Version: 1.0' . "\r\n";
     $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
 	$headers .= 'From: ' . $from . "\r\n";
 
-	$result = mail($to,$subject,$comments,$headers);
+	$result = mail($to,$subject,$message,$headers);
 
 	if ($result) return 1;
 	else return 0;
