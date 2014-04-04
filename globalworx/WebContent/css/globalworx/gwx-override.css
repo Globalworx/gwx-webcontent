@@ -15,21 +15,38 @@ h1,h2,h3,h4,p{
 	font-family: "Open Sans" !important;
 }
 
+
+
+
+/* index page */
+
+.icon-check.slide-text i{
+	font-family: "Open Sans" !important;
+	font-size: 22px !important;
+	font-weight: 160px !important;
+}
+
+
 .slide-text{
-	font-size: 22px;
+	font-size: 22px !important;
 	word-break: break-all;
 }
 .slide-text-header{
-	font-size: 48px;
+	font-size: 48px !important;
 }
+
 .slide-text-sub-header{
 	font-size: 20px;
 	margin-top: -13px;
 }
 
+.tp-caption.small_light_white {
+	font-family: "Open Sans" !important;
+}
 
 
-/* index page */
+
+
 .featured-box img {
 	width: 160px;
 	height: 120px;
