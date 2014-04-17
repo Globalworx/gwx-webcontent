@@ -20,6 +20,14 @@ h1,h2,h3,h4,p{
 
 /* index page */
 
+.gwx-youtube:hover {
+	background-color:#FFF;
+}
+
+.social-icons li a i.gwx-icon-youtube {
+    color:#bf2f29;
+}
+
 .icon-check.slide-text i{
 	font-family: "Open Sans" !important;
 	font-size: 22px !important;
