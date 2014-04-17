@@ -47,6 +47,7 @@ h1,h2,h3,h4,p{
 .slide-text{
 	font-size: 22px !important;
 	word-break: break-all;
+	line-height: 27px;
 }
 .slide-text-header{
 	font-size: 48px !important;
