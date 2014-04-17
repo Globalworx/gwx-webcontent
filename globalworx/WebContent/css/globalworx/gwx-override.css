@@ -266,3 +266,15 @@ td {
 .odd{
 	background-color:#E9EDF4;
 }
+
+
+
+/*contact*/
+.featured-desc-2 a {
+	top:0;
+}
+input.field{
+	width:96% !important;
+	height: 13px;
+}
+

@@ -6,6 +6,7 @@
 $name = $_POST['name'];
 $email = $_POST['email'];
 $company = $_POST['company'];
+$phone = $_POST['phone'];
 $message = $_POST['message'];
 $errors='';
 
@@ -48,6 +49,7 @@ if (!$errors) {
 		<tr><td>Name:</td><td>' . $name . '</td></tr>
 		<tr><td>Email:</td><td>' . $email . '</td></tr>
 		<tr><td>Company:</td><td>' . $company . '</td></tr>
+		<tr><td>Phone:</td><td>' . $phone . '</td></tr>
 		<tr><td>Message:</td><td>' . nl2br($message) . '</td></tr>
 	</table>
 	</body>

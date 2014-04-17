@@ -170,19 +170,23 @@
                          <fieldset>
                          <div>
                               <label for="name" accesskey="U">Name: <span>*</span></label>
-                              <input name="name" type="text" id="name" style="width:96%;" />
+                              <input class="field" name="name" type="text" id="name"  />
                          </div>
                          <div>
                               <label for="email" accesskey="E">Email: <span>*</span></label>
-                              <input name="email" type="email" id="email" pattern="^[A-Za-z0-9](([_\.\-]?[a-zA-Z0-9]+)*)@([A-Za-z0-9]+)(([\.\-]?[a-zA-Z0-9]+)*)\.([A-Za-z]{2,})$" style="width:96%;" />
+                              <input class="field" name="email" type="email" id="email" pattern="^[A-Za-z0-9](([_\.\-]?[a-zA-Z0-9]+)*)@([A-Za-z0-9]+)(([\.\-]?[a-zA-Z0-9]+)*)\.([A-Za-z]{2,})$" />
                          </div>
-                          <div>
+                         <div>
                               <label for="company" accesskey="C">Company: <span>*</span></label>
-                              <input name="company" type="text" id="company" style="width:96%;" />
+                              <input class="field" name="company" type="text" id="company" />
+                         </div>
+                         <div>
+                              <label for="phone" accesskey="P">Phone: </label>
+                              <input class="field" name="phone" type="text" id="phone" />
                          </div>
                          <div>
                               <label for="message" accesskey="M">Message: <span>*</span></label>
-                              <textarea name="message" cols="40" rows="3" id="message" spellcheck="true" style="width:96%;"></textarea>
+                              <textarea name="message" cols="40" rows="5" id="message" spellcheck="true" style="width:auto; height: auto;"></textarea>
                          </div>
                          </fieldset>
                          <input type="submit" class="submit" id="submit" value="Send Message" />
@@ -196,7 +200,7 @@
                <h3 class="headline">Contact Information</h3>
                <span class="brd-headling"></span>
                <div class="clearfix"></div>
-               <p>We like to hear from you. Give us a call an email or drop by our office.</p>
+               <p>We'd like to hear from you.</p>
               
                <div class="eight columns" style="border-bottom:1px solid #eee; margin-left:2px;">
                     <div class="featured-box" data-animated="flipInX">
@@ -213,8 +217,8 @@
                          <div class="circle-2"><i class="ss-mail"></i></div>
                          <div class="featured-desc-2">
                               <h3>Email</h3>
-                              <p><strong>Sales and General Inquiries:</strong> info@globalworx.com<br>
-								<strong>Technical Support:</strong> support@globalworx.com<br>
+                              <p><strong>Sales and General Inquiries:</strong> <a href="mailto:info@globalworx.com?subject=Web Inquiry: Sales and General Inquiry">info@globalworx.com</a><br>
+								<strong>Technical Support:</strong> <a href="mailto:support@globalworx.com?subject=Web Inquiry: Technical Support">support@globalworx.com</a><br>
                               </p>
                          </div>
                     </div>
@@ -231,15 +235,14 @@
                               <p>
                               <a href="https://www.google.com/maps/place/35+McTavish+Pl+NE/@51.0945449,-114.0170306,14z/data=!4m2!3m1!1s0x537164fbe420ea4b:0x6118f51f9e671c8c" target="_blank">
 	                              	35 McTavish Place NE<br/>
-									Calgary, Alberta, Canada T2E 7J7
+									Calgary, AB T2E 7J7
 							  </a>
 							  </p>
 							  <strong>United States </strong>
 							  <p>
                               <a href="https://www.google.com/maps/place/20+Church+St/@41.0329206,-73.6261662,17z/data=!3m1!4b1!4m2!3m1!1s0x89c29846c389f445:0x88cf36e90dcd9120" target="_blank">
-	                              	20 Church Street
-									Greenwich CT 06830<br/>
-									United States
+	                              	20 Church Street<br/>
+									Greenwich, CT 06830
 							  </a>
 							  </p>
                          </div>
