@@ -216,7 +216,7 @@ a.button.color.animated.fadeInRight:hover{
 
 
 
-/*einnovate page*/
+/*accessorize page*/
 
 .bg-red{
 	background-color:#FA0F0C;
@@ -266,6 +266,16 @@ td {
 .odd{
 	background-color:#E9EDF4;
 }
+
+.sub-headline {
+	font-size: 12px;
+	font-weight:800;
+	padding-right: 10px;
+	text-transform:uppercase;
+	letter-spacing:3px;
+}
+
+
 
 
 
