@@ -100,7 +100,7 @@ h1,h2,h3,h4,p{
 }
 
 .iaaspage .scalable-service{
-	width:345px;
+	width:310px;
 	margin-left:20px;
 }
 
@@ -151,8 +151,26 @@ h1,h2,h3,h4,p{
 
 .child-list{
 	padding-left: 25px;
+	list-style-type: none;
+/* 	padding: 0px; */
+/* 	margin: 0px; */
 }
 
+
+li.grey-arrow
+{
+	background-image: url("../../images/globalworx/cw/grey-arrow-bullet-point.png");
+	background-repeat: no-repeat;
+	background-position: -1px 9px;
+	padding-left: 16px;
+}
+
+
+.featured-desc-gwx{
+	text-align:left;
+	margin: 40px 10px 0px 70px;
+}
+	
 .child-list p{
 	margin-bottom:10px;
 	text-align:justify;
