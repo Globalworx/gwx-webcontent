@@ -58,10 +58,21 @@ if (!$errors) {
 	// Send the mail
 	$result = sendmail($to, $subject, $message, $from);
 	
+	$variableOk = <<<OK
+		<h4 style="color: green">Thank you! We have received your message.</h4>
+OK;
+	
+	$variableFAIL = <<<FAIL
+		<h4 style="color: red">Sorry, unexpected error. Please try again later.</h4>
+FAIL;
+	
 	//if POST was used, display the message straight away
 	if ($_POST) {
-		if ($result) echo 'Thank you! We have received your message.';
-		else echo 'Sorry, unexpected error. Please try again later';
+//		if ($result) echo 'Thank you! We have received your message.';
+//		else echo 'Sorry, unexpected error. Please try again later';
+
+	if ($result) echo $variableOk;
+		else echo $variableFAIL;
 		
 	//else if GET was used, return the boolean value so that 
 	//ajax script can react accordingly
