@@ -88,6 +88,10 @@ h1,h2,h3,h4,p{
 	margin-bottom:15px;
 }
 
+ul.disc{
+	list-style:disk;
+	text-align:left;
+}
 
 
 .iaaspage .convenience-of-access{
